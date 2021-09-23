@@ -1,0 +1,14 @@
+diff --git a/node_modules/extract-dmg/index.d.ts b/node_modules/extract-dmg/index.d.ts
+index cde9ee3..5810764 100644
+--- a/node_modules/extract-dmg/index.d.ts
++++ b/node_modules/extract-dmg/index.d.ts
+@@ -15,6 +15,6 @@
+  * })()
+  * ```
+ */
+-declare function extractDmg(filename: string, destination?: string): string[]
++declare function extractDmg(filename: string, destination?: string): Promise<string[]>
+ 
+-export = extractDmg
++export = extractDmg;
+\ No newline at end of file
